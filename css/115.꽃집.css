@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    background: url(../img/반응형/꽃집/background.png)no-repeat fixed center / cover;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+#wrap {
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px;
+    box-sizing: border-box;
+}
+.header  {
+    width: 100%;
+    height: 195px;
+    /* background: url(../img/반응형/꽃집/topbg3.png) no-repeat left / cover; */
+}
+.header > img {
+    width: 100%;
+    height: 100%;
+}
+.nav {
+    width: 100%;
+    height: 50px;
+    background-color: #c51a3a;
+    color: white;
+}
+.menu_bar {
+    display: flex;
+    text-align: center;
+    line-height: 30px;
+}
+.menu {
+    padding: 10px;
+}
+.menu:hover {
+    background-color: white;
+    color: #c51a3a;
+    font-weight: 900;
+    border-radius: 20px 20px 0 0;
+}
+.main {
+    padding: 0 10px;
+    width: 100%;
+    display: flex;
+}
+.main > div > p {
+    color: red;
+}
+.main2 {
+    display: flex;
+}
+.main2 > div > .title {
+    background-color: #c51a3a;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    color: white;
+}
+.main2 > div > ul {
+    margin: 0;
+    padding: 0 40px;
+    list-style-type: disc;
+}
+.f1 {
+    display: flex;
+    align-items: flex-end;
+}
+.f1 > img {
+    width: calc(100% / 4);
+    height: 200px;
+}
+.f1 > div > b {
+    color: #993366;
+}
+.f1 > div > p {
+    color: #0066ff;
+}
+
+
+

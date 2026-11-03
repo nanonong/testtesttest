@@ -1,0 +1,115 @@
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#wrap {
+    width: 1280px;
+    margin: 0 auto;
+}
+.header_1 {
+    height: 50px;
+    position: relative;
+    display: flex;
+}
+.h_ul_1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+}
+.h_ul_2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+}
+.img_1 {
+    width: 32px;
+    height: 32px;
+    background: url(../img/sp_main.65843251.png);
+    background-size: 452px 436px;
+    background-position: -298px -144px;
+}
+.img_2 {
+    width: 32px;
+    height: 32px;
+    background: url(../img/sp_main.65843251.png);
+    background-size: 452px 436px;
+    background-position: 0.5px -304px;
+}
+.img_3 {
+    width: 32px;
+    height: 32px;
+    background: url(../img/sp_main.65843251.png);
+    background-size: 452px 436px;
+    background-position: -125px -304px;
+}
+.img_4 {
+    width: 32px;
+    height: 32px;
+    background: url(../img/sp_main.65843251.png);
+    background-size: 452px 436px;
+    background-position: -297.5px -207px;
+}
+.img_5 {
+    width: 32px;
+    height: 32px;
+    background: url(../img/sp_main.65843251.png);
+    background-size: 452px 436px;
+    background-position: -62px -304px;
+}
+.header_2 {
+    width: 710px;
+    height: 60px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.logo {
+    width: 24px;
+    height: 24px;
+    padding: 18px 0 0 20px;
+}
+.search_box {
+    width: 100%;
+    height: 60px;
+    border: 3px solid #04c75b;
+    border-radius: 50px;
+    overflow: hidden;
+    display: flex;
+}
+.search_input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 30px;
+}
+.search_icon {
+    width: 24px;
+    height: 24px;
+    padding: 17px 18px 0 0;
+}
+nav {
+    width: 680px;
+    height: 70px;
+    margin: 0 auto;
+}
+.n_ul {
+    display: flex;
+}
+.n_li {
+    width: calc(100% / 12);
+}
+.square {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+}
+.n_div {
+    
+}
+main {
+    width: 1280px;
+}

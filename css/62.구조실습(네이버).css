@@ -1,0 +1,282 @@
+body { margin: 0;}
+
+/* 공통 */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.w_1280 {
+    width: 1280px;
+    margin: 0 auto;
+    height: 100%;
+    /* background-color: skyblue; */
+}
+
+/* 헤더 */
+.header {
+    width: 100%;
+
+    /* background-color: yellowgreen; */
+    /* height: 300px; */
+    padding-bottom: 30px;
+}
+.top_icon_box {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 3px solid; */
+
+}
+.top_box {
+    height: 50px;
+}
+.top_box_L {
+    display: flex;
+    /* background-color: orange; */
+}
+.top_btn {
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid red; */
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.top_btn:hover {
+    background: #eaeaea;
+}
+.top_btn_box {
+    width: 32px;
+    height: 32px;
+
+    background-image: url(../img/naver_icons.png);
+    background-repeat: no-repeat;
+    background-size: 452px 436px;
+}
+.top_btn_ham {
+    background-position: -298px -144px;
+}
+.top_btn_pay {
+    background-position: 0.5px -304px;
+}
+.top_btn_talk {
+    background-position: -125px -304px;
+}
+.top_btn_notice {
+    background-position: -297.5px -207px;
+}
+.top_btn_shopping {
+    background-position: -62px -304px;
+}
+
+.top_box_R {
+    display: flex;
+    /* background-color: blue; */
+}
+
+.search_box {
+    width: 710px;
+    height: 60px;
+    border: 2px solid #03C75A;
+    border-radius: 30px;
+    margin: 0 auto;
+    display: flex;
+}
+.logo {
+    width: 80px;
+    height: 60px;
+    display: flex;
+    position: relative; 
+
+}
+.logo div {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: calc(50% - 12px);
+    right: 15px;
+
+    /* font-size: 0;  */
+    text-indent: -9999px;
+    overflow: hidden;
+
+    background-image: url(../img/naver_icons.png);
+    background-repeat: no-repeat;
+    background-size: 452px 436px;
+    background-position: -143.5px -398px;
+}
+.search_keyword {
+    width: calc(100% - 80px - 80px);
+    height: 100%;
+    border: none;
+    padding: 0;
+    outline: none;
+    font-size: 20px;
+    font-weight: 700;
+    /* background-color: blue; */
+}
+.keyboard {
+    width: 80px;
+    height: 60px;
+    display: flex;
+    position: relative; 
+    cursor: pointer;
+
+    /* background-color: red; */
+}
+.keyboard div {
+     width: 24px;
+    height: 24px;
+    position: absolute;
+    top: calc(50% - 12px);
+    left: 15px;
+
+    /* font-size: 0;  */
+    text-indent: -9999px;
+    overflow: hidden;
+
+    
+    background-image: url(../img/naver_icons.png);
+    background-repeat: no-repeat;
+    background-size: 452px 436px;
+    background-position: -94.5px -398px;
+}
+
+.nav_bar_ul {
+    width: 680px;
+    height: 70px;
+    margin: 10px auto 0;
+
+    display: flex;
+
+    /* background-color: red; */
+}
+.nav_items_li {
+    width: calc(100% / 11);
+    height: 100%;
+
+    /* border: 1px solid; */
+}
+.nav_icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+.nav_title {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+
+/* 본문 */
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    height: 1000px; 
+}
+
+.sec_L {
+    width: 830px;
+
+    height: 1000px;
+    /* background-color: orange; */
+}
+.sec {
+    border: 1px solid red;
+    border-radius: 10px;
+    overflow: hidden;
+
+    padding: 20px;
+    box-sizing: border-box;
+}
+#adv {
+    font-size: 0;
+    padding: 0;
+}
+.adv_img {
+    width: 100%;
+}
+
+.sec_title {
+    font-weight: 500;
+    font-size: 18px;
+    height: 50px; /* margin 대신 높이로 아래꺼 사이에 여백처럼 보여줄 수 있음 */
+}
+
+.news_list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    overflow: hidden;
+    /* box-shadow: 0 0 0 1px; */
+    border: 1px solid;
+    border-radius: 10px;
+}
+.news_list_items {
+    width: calc(100% / 6);
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    /* border: 1px solid;
+    box-sizing: border-box; */
+
+    /* border 대신 그럼지로 대체 가능 */
+    box-shadow: 0 0px 0px 1px #000;
+    background: #fff;
+}
+.new_box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    display: none; 
+
+    background-color: skyblue;
+}
+.news_list_items:hover .new_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.new_txt_box {
+    color: #fff;
+    display: flex;
+    align-items: center; 
+}
+.new_txt_box a:hover {
+    font-weight: 600;
+    text-decoration: underline;
+}
+.new_txt_box .v_line {
+    width: 1px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0 10px;
+}
+
+.sec_R {
+    width: 420px;
+
+    height: 1000px;
+    background-color: aquamarine;
+}

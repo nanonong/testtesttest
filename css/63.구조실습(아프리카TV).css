@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    height: 5000px;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+main {
+    display: flex;
+}
+.h_d {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-width: 0 0 1px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+header {
+    height: 100px;
+    margin: 0 10px;
+}
+.h_1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+.h_L {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.h_R {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+.logo {
+    width: 250px;
+}
+.search {
+    width: 300px;
+    height: 25px;
+    outline: none;
+    border: 3px solid blue;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+.h_2 {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.h_ul_L {
+    display: flex;
+}
+.h_ul_R {
+    display: flex;
+}
+.h_li_L {
+    padding: 0 10px;
+    font-weight: 700;
+}
+.h_li_R {
+    padding: 0 10px;
+    font-weight: 700;
+}
+.aside {
+    width: 250px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-width: 0 1px 0 0;
+    position: fixed;
+    left: 0;
+    top: 100px;
+}
+.a_div1 {}
+.a_ul_1 {}
+.a_ul_2 {}
+.a_li_1 {padding: 10px 0;}
+.line {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-width: 0 0 1px 0;
+    margin: 0 10px;
+}
+.a_li_2 {padding: 10px 0;}
+.small_banner {
+    height: 100px;
+    background-color: pink;
+    width: 100%;
+    display: flex;
+}
+.sb_div {
+    width: calc(100% / 3);
+    height: 100%;
+    background-color: pink;
+    border: 1px solid;
+    box-sizing: border-box;
+}
+.m_content {
+    width: 80%;
+    margin: 0 auto;
+}
+/* .main_banner {
+    background: url(../img/afreeca_banner.jpg);
+} */
+

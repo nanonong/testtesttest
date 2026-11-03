@@ -1,0 +1,194 @@
+.main {
+    min-height: 600px;
+}
+
+/* 메인배너 */
+.main_banner {
+    width: 100%;
+    height: 600px;
+    margin-bottom: 200px;
+    overflow: hidden;
+    cursor: pointer;
+
+    position: relative;
+}
+
+/* 배너 알맹이 */
+.box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 100%;
+    top: 0;
+
+    /* opacity: 0.3; */
+}
+.main_banner1 {
+    background: url(../../img/theComma/main_banner/main_img_01.jpg) no-repeat center;
+
+    /* left: 0; */
+}
+.main_banner2 {
+    background: url(../../img/theComma/main_banner/main_img_02.jpg) no-repeat center;
+}
+.main_banner3 {
+    background: url(../../img/theComma/main_banner/main_img_03.jpg) no-repeat center;
+}
+
+/* 메인배너 좌우버튼 */
+.btn_slide {
+    width: 100px;
+    height: 100%;
+    background-color: red;
+    /* cursor: pointer; */
+
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+}
+#btn_L {
+    left: 0;
+    background: url(../../img/theComma/main_banner/w_slide_prev.png) no-repeat center;
+}
+#btn_R {
+    right: 0;
+    background: url(../../img/theComma/main_banner/w_slide_next.png) no-repeat center;
+}
+
+
+/* 인디케이터 */
+.indicator {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    gap: 10px;
+}
+.indi {
+    width: 30px;
+    height: 7px;
+    background-color: #aaa;
+    border-radius: 5px;
+    
+    transition: all 0.5s;
+}
+.indi:hover {
+    background-color: #333;
+}
+.indi_active {
+    background-color: #333;
+    width: 60px;
+}
+
+
+/* 본문 */
+.sec {
+    margin-bottom: 100px;
+}
+.sec_title {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 80px;
+    letter-spacing: 5px;
+}
+.item_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px; /* 본문 li 들의 여백값. 이거 바꾸면 li들 calc 부분 다 수정해야함 */
+}
+
+img {
+    width: 100%;
+}
+/* 글자 부분 */
+.item_info {
+    margin-bottom: 100px;
+}
+.item_info_title {
+    color: #333;
+    font-size: 13px;
+    line-height: 30px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+.o_price,
+.s_price,
+.item_desc {
+    color: #333;
+    font-size: 12px;
+    font-weight: 200;
+}
+.o_price { text-decoration: line-through;}
+
+
+/* 아이템 위로 순차적으로 나타나면서 올라오게 하는 용도 */
+.item_init {
+    opacity: 0.3;
+    transform: translateY(100px);
+    transition: all .5s;
+}
+.item_init_active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+/* weekly */
+#w_ranking li {
+    width: calc((100% - (14px * 5)) / 6);
+}
+#w_ranking .item_img {
+    position: relative;
+} 
+.ranking_num {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+
+/* best */
+#best li {
+    width: calc((100% - (14px * 3)) / 4);
+
+}
+#best .item_img {
+    overflow: hidden;
+    font-size: 0;
+}
+#best li img {
+    transition: all 0.3s;
+}
+#best li:hover img {
+    transform: scale(1.2);
+}
+
+/* new */
+#new li {
+    width: calc((100% - (14px * 3)) / 4);
+
+    position: relative;
+}
+
+#new li .coveredImg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 0.3s;
+}
+#new li:hover .coveredImg {
+    opacity: 1;
+}

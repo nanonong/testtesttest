@@ -1,0 +1,359 @@
+/* 공통 */
+body { background-color: #1b4058
+;}
+.content_box {
+    width: 940px;
+    height: 100%;
+    margin: 0 auto;
+    /* position: relative; */
+    /* overflow: hidden; */
+
+    /* border: 1px solid aqua; */
+}
+.m_b_10 { margin-bottom: 10px;}
+
+
+/* 헤더 */
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: #121212;
+}
+.fl {
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+
+/* 로고 */
+.logo {
+    width: 170px;
+    height: 45px;
+    background: url(../img/logo_steam.svg) no-repeat center / contain;
+    /* background-color: green; */
+}
+.logo img {
+    width: 100%;
+}
+
+/* 헤더의 메뉴 */
+.h_nav_box_ul {
+    display: flex;
+    margin-left: 60px;
+    color: #b2b2b2;
+
+    /* background-color: orange; */
+}
+.h_nav_box_li {
+    font-size: 14px;
+    padding: 0 15px;
+    position: relative;
+
+    /* border: 1px solid yellow; */
+}
+
+
+.h_inner_ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+
+    background: #3D4450;
+}
+.h_inner_ul li {
+    padding: 5px 20px;
+    font-size: 12px;
+}
+
+.h_nav_box_li:hover .h_inner_ul {
+    display: block;
+    cursor: pointer;
+}
+.h_inner_ul li:hover {
+    background-color: #dcdedf;
+    color: #3D4450;
+}
+ 
+
+/* span { background-color: yellowgreen;} */
+
+.h_nav_box_li:hover span {
+    color: #fff; 
+    cursor: pointer;
+}
+
+
+/* 헤더 오른쪽 메뉴 */
+.h_right_menu {
+    color: #fff;
+    display: flex;
+
+    position: absolute;
+    right: -100px;
+    top: 0;
+
+    font-size: 13px;
+
+    /* background-color: burlywood; */
+}
+.btn_install {
+    background-color: green;
+    padding: 5px 10px;
+}
+.btn_login {
+    padding: 5px 15px;
+    position: relative;
+    /* background-color: salmon; */
+}
+.v_line {
+    width: 1px;
+    height: 10px;
+    background-color: #fff;
+
+    position: absolute;
+    top: calc(50% - 5px);
+    right: -8px;
+}
+.sel_lang {
+    outline: none;
+    margin: 0 15px;
+    padding: 0 5px;
+
+
+    border: none;
+    background: #171717;
+    color: #fff;
+}
+
+
+/* 본문 */
+.main {
+    padding: 30px 0;
+}
+
+.nav {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    font-size: 13px;
+    color: #b2b2b2;
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #377097;
+}
+
+.nav_ul {
+    display: flex;
+}
+.nav_ul li {
+    padding: 0 15px;
+    border-right: 1px solid;
+}
+.nav_ul li:hover {
+    cursor: pointer;
+    background-color: #dfdfdf;
+    color: #377097;
+}
+.search {
+    margin: 4px;
+    border-radius: 3px;
+    border: 1px solid #1b4058;
+    background: #1b4058;
+}
+.search::placeholder {
+    color: #626262;
+}
+
+/* 본문 - 공통 */
+.sec {
+    margin-top: 40px;
+}
+.sec_title {
+    color: #fff;
+    margin: 0;
+}
+.sec_container {
+    display: flex;
+}
+.sec_paging {
+    /* 아래 paging 2번 방법의 absolute 용 */
+    /* position: relative; */
+}
+.paging {
+    /* 1번 방법 - 가로 100% 다 먹고 자식들 가운데 정렬 하는 방법 */
+    display: flex;
+    justify-content: center;
+
+    /* 2번방법 - 필요한 만큼 사이즈 잡아서 본인 스스로 가운데 정렬(어짜피 이거 해도 flex나 자식에 float 걸어서 옆으로 나열 시켜야함 */
+    /* position: absolute;
+    left: calc(50% - (250px / 2)); */
+}
+.paging li {
+    width: 15px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 1px;
+    margin: 5px;
+}
+
+/* 본문 - featured */
+#featured .sec_container {
+    height: 350px;
+}
+.featured_L {
+    width: 65%;
+    background-color: teal;
+}
+.featured_R {
+    width: 35%;
+    background-color: steelblue;
+}
+
+
+/* 본문 - special */
+.special_gap {
+    gap: 10px;
+}
+
+#special .sec_container {
+    height: 390px;
+}
+.special_items {
+    width: calc((100% - (10px * 2)) / 3);
+
+    border: 1px solid;
+    box-sizing: border-box;
+}
+.special_items .special_img{
+    width: 100%;
+    height: 70%;
+    background-color: gray;
+}
+.special_items .special_desc {
+    width: 100%;
+    height: 30%;
+    background-color: #b2b2b2;
+} 
+.special_box {
+    width: 100%;
+    height: calc((100% - 10px) / 2);
+}
+
+
+/* browse */
+.browse_items {
+    width: calc((100% - (10px * 3)) / 4);
+    height: 60px;
+    line-height: 60px;
+    background-color: #1c5e81;
+    color: skyblue;
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.8) ;
+    text-shadow: 0 0 1px #395d6c;
+    cursor: pointer;
+
+
+    /* margin-right: 10px; */
+}
+.browse_items:hover {
+    color: #fff; 
+}
+
+
+/* 차트 */
+.chart_L {
+    width: 620px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    background-color: wheat;
+}
+.chart_L_items {
+    width: 100%;
+    height: 70px;
+    cursor: pointer;
+    
+    display: flex;
+}
+.chart_img {
+    width: 184px;
+    height: 100%;
+    background-color: skyblue;
+}
+.chart_desc {
+    width: calc(100% - 184px);
+    height: 100%;
+    background-color: pink;
+}
+.chart_L_items:hover .chart_desc {
+    background-color: hotpink;
+}
+
+.chart_R {
+    width: 310px;
+    height: 790px;
+    background-color: salmon;
+
+    padding: 10px;
+    box-sizing: border-box;
+
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.chart_R_img {
+    width: 100%;
+    height: calc((100% - 27px) / 5);
+    background-color: orangered;
+}
+
+
+/* 업데이트 */
+.update_container {
+    width: 100%;
+    height: 400px;
+}
+.updates_img_L {
+    width: 400px;
+    height: 400px;
+    background-color: turquoise;
+
+    float: left;
+    margin-right: 10px;
+}
+
+.updates_img_R_items {
+    width: calc((100% - 400px - (10px * 3)) / 3);
+    height: calc((100% - 10px) / 2);
+    background-color: skyblue;
+    
+    margin-right: 10px;
+    margin-bottom: 10px ;
+    
+    float: left;
+}
+
+.m_r_0 { margin-right: 0;}
+
+/* 푸터 */
+.footer {
+    width: 100%;
+    height: 300px;
+    background-color: #222;
+    
+    color: #a7a7a7;
+    line-height: 50px;
+}
+.f_top {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid ;
+}

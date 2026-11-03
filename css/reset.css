@@ -1,0 +1,15 @@
+body { margin: 0;}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}.main_banner2 {
+    width: 100%;
+    height: 100px;
+
+    background: url(../img/afreeca_banner.jpg);
+}
